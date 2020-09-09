@@ -1,0 +1,10 @@
+body {
+    overflow: hidden;
+}
+.custom {
+    display: flex;
+    margin: 20% 20%;
+}
+.edits-container {
+    padding-left: 30% !important;
+}

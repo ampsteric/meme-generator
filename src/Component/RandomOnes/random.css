@@ -1,0 +1,16 @@
+img {
+    height: 15vw;
+    width: 15vw;
+    padding: 0.2% 2%;
+    margin: 0% 20%;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.random {
+    text-align: center;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
