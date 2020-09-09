@@ -9,8 +9,12 @@
     "axios": "^0.20.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-dropzone": "^11.1.0",
+    "react-images-upload": "^1.2.8",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-sky": "^1.1.0",
+    "superagent": "^6.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

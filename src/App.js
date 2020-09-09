@@ -2,7 +2,30 @@ import React, { useState } from "react";
 import Image from "./Component/Image/Image";
 import Random from "./Component/RandomOnes/RandomOne";
 import Custom from "./Component/Custom/Custom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Upload from "./Component/ImageUpload/ImageUpload";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Intro from "./Component/Intro/Intro";
+// import React, { Component } from "react";
+import Sky from "react-sky";
+// import "./intro.css";
+
+// you can pass imported images to Sky
+import myImage14 from "./utils/memes/1.jpg";
+import myImage from "./utils/memes/2.jpg";
+import myImage1 from "./utils/memes/3.jpg";
+import myImage2 from "./utils/memes/4.jpg";
+import myImage3 from "./utils/memes/5.jpg";
+import myImage4 from "./utils/memes/6.jpg";
+import myImage5 from "./utils/memes/7.jpg";
+import myImage6 from "./utils/memes/8.jpg";
+import myImage7 from "./utils/memes/9.jpg";
+import myImage8 from "./utils/memes/10.jpg";
+import myImage9 from "./utils/memes/11.jpg";
+import myImage10 from "./utils/memes/12.jpg";
+import myImage11 from "./utils/memes/13.jpg";
+import myImage12 from "./utils/memes/14.jpg";
+import myImage13 from "./utils/memes/15.jpg";
+import cover from "./utils/rocket.png";
 import "./App.css";
 const names = [
     "buzz",
@@ -145,7 +168,6 @@ const names = [
 
 function App() {
     const [name, setname] = useState();
-    let value;
     const res = names.map((item) => {
         return (
             <Image
@@ -158,28 +180,58 @@ function App() {
     });
     return (
         <div className="App">
-            <Router>
+            {/* <Router>
                 <Route path="/" exact>
                     {res}
                 </Route>
-                {/* <Route path={`/customize/:id`} exact>
-                    <Custom path={`/customize/:id`} />
-                </Route> */}
-                <Route exact path="/customize/:id" component={Custom} />
-            </Router>
+                <Route path="/random" exact>
+                    <Random />{" "}
+                </Route>
+                <Route path="/customBackground" exact>
+                    <Upload />
+                </Route>
 
-            {/* <Random /> */}
-            {/* <Router> */}
-            {/* <Switch> */}
-            {/* <Route path="/" exact> */}
-            {/* {res} */}
-            {/* </Route> */}
-            {/* <Route path="/customize" exact> */}
-            {/* <Random name={name} /> */}
-            {/* <Custom name={name} /> */}
-            {/* </Route> */}
-            {/* </Switch> */}
-            {/* </Router> */}
+                <Route exact path="/customize/:id" component={Custom} />
+            </Router> */}
+            {/* <p>To one and All..</p> */}
+            <Sky
+                images={{
+                    /* FORMAT AS FOLLOWS */
+                    0: myImage1 /* You can pass as many images as you want */,
+                    1: myImage /* you can pass images in any form: link, imported via webpack... */,
+                    2: myImage2,
+                    3: myImage4,
+                    4: myImage5,
+                    5: myImage6,
+                    6: myImage7,
+                    7: myImage8,
+                    8: myImage9,
+                    9: myImage10,
+                    10: myImage11,
+                    11: myImage12,
+                    12: myImage13,
+                    13: myImage14,
+                    14: myImage3,
+                }}
+                how={
+                    130
+                } /* Pass the number of images Sky will render chosing randomly */
+                time={40} /* time of animation */
+                size={"100px"} /* size of the rendered images */
+                background={"#C3AED6"} /* color of background */
+            />
+            <div className="modal1">
+                <div>
+                    <p>Welcome to MEMErchandise.</p>
+                    <a class="waves-effect waves-light btn-large">
+                        <i class="material-icons right">arrow_forward</i>Get
+                        Started
+                    </a>
+                </div>
+                <div>
+                    <img src={cover} />
+                </div>
+            </div>
         </div>
     );
 }

@@ -2,6 +2,33 @@
     margin: 0;
     padding: 0;
 }
+
+.modal1 {
+    display: flex;
+    margin: 10% 20%;
+    background-color: #554d84;
+    box-shadow: #eee 5px 5px 30px 10px;
+    border-radius: 20px;
+    height: 60vh;
+    width: 120vh;
+}
+a {
+    background-color: #f5c518 !important;
+    border-radius: 8px !important;
+}
+.modal1 img {
+    height: 50vh;
+    width: 100%;
+    margin: 16.7% 0% 0% 1.9%;
+}
+p {
+    margin: 25% 5%;
+    font-family: "Work Sans", sans-serif;
+    line-height: 100%;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
 .App {
     text-align: center;
     display: flex;
