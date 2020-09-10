@@ -1,0 +1,208 @@
+* {
+    color: #1e8bc3;
+}
+a:link {
+    color: white !important;
+    /* background-color: white !important; */
+}
+.home {
+    width: 500vh;
+    height: 100vh;
+}
+.MuiSvgIcon-root {
+    fill: white !important;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+body {
+    position: relative;
+    background-color: black;
+}
+.position {
+    background-color: black !important;
+}
+.position1 {
+    background-color: white !important;
+}
+span {
+    color: #ff9800 !important;
+}
+p {
+    margin: 25% 2% !important;
+}
+.protest p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 100px !important ;
+    color: white !important;
+}
+.speak p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 100px !important ;
+    color: white !important;
+}
+/* .mockup p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 70px !important ;
+    color: white !important;
+    margin: 30% 5% !important;
+} */
+.mockup p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 70px !important;
+    color: white !important;
+    margin: 30% 5% !important;
+}
+.make p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 100px !important ;
+    color: black !important;
+    margin: 10% 5% !important;
+}
+.protest {
+    display: flex;
+    background-color: black;
+}
+#color {
+    color: #554d84 !important;
+}
+#color1 {
+    color: #ff5678 !important;
+}
+#yellow {
+    background-color: #ff9800;
+}
+#pink {
+    background-color: #ff5678;
+}
+#dark-pink {
+    color: #fdd365 !important;
+}
+#links {
+    margin-top: 30% !important;
+}
+footer li {
+    margin-top: 10%;
+}
+footer img {
+    height: 25%;
+    width: 25%;
+}
+.container {
+    color: white !important;
+}
+.speak {
+    display: flex;
+    background-color: #22313f;
+}
+.make {
+    display: flex;
+    background-color: white;
+}
+.aboveall {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.mockup {
+    display: flex;
+    background-color: black;
+    height: 120vh !important;
+}
+/* .mockup img {
+    box-sizing: border-box;
+    margin-right: 10% !important;
+    margin-left: 2% !important;
+    padding: 0;
+    height: 40% !important;
+    width: 50vw !important;
+    padding: 0 !important;
+    cursor: pointer;
+    border-radius: 0 !important;
+} */
+/* .mockup img {
+    box-sizing: border-box;
+    margin-right: 10% !important;
+    margin-left: 2% !important;
+    margin-top: 20% !important;
+    padding: 0;
+    height: 70% !important;
+    width: 50vw !important;
+    padding: 0 !important;
+    cursor: pointer;
+    border-radius: 0 !important;
+} */
+footer {
+    background-color: #ff5678 !important;
+}
+.mockup img {
+    box-sizing: border-box;
+    margin-right: 10% !important;
+    margin-left: 2% !important;
+    margin-top: 30%;
+    padding: 0;
+    height: 50% !important;
+    width: 50vw !important;
+    padding: 0 !important;
+    cursor: pointer;
+    border-radius: 0 !important;
+}
+
+.left {
+    width: 30%;
+    margin: 1% 10%;
+}
+.left1 {
+    box-sizing: border-box;
+    width: 30%;
+    margin: 1% 10% 5% 2%;
+}
+
+.display {
+    width: 100%;
+    /* margin: 1% 10%; */
+}
+.svg {
+    width: 180vh;
+    height: 50vh;
+}
+.custom-shape-divider-bottom-1599712838 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1599712838 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 192px;
+}
+
+.custom-shape-divider-bottom-1599712838 .shape-fill {
+    fill: #ffffff;
+}
+
+.curved {
+    position: relative;
+    height: 50vh;
+}
+
+.curved::after {
+    content: "";
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    height: 44%;
+}

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Dropzone from "react-dropzone";
 import request from "superagent";
 
@@ -61,6 +61,7 @@ export default class ImageUpload extends React.Component {
                             <div>
                                 <img
                                     src={`https://api.memegen.link/images/custom/${this.state.toptext}/${this.state.bottomtext}.png?background=${this.state.uploadedFileCloudinaryUrl}`}
+                                    alt="fetched"
                                 />
                             </div>
                         )}

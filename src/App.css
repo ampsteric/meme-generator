@@ -12,9 +12,25 @@
     height: 60vh;
     width: 120vh;
 }
-a {
+.modal1 a {
     background-color: #f5c518 !important;
     border-radius: 8px !important;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+a:active {
+    color: white;
+    text-decoration: none;
 }
 .modal1 img {
     height: 50vh;
@@ -22,12 +38,12 @@ a {
     margin: 16.7% 0% 0% 1.9%;
 }
 p {
-    margin: 25% 5%;
+    margin: 25% 5% !important;
     font-family: "Work Sans", sans-serif;
-    line-height: 100%;
-    font-size: 50px;
-    font-weight: 800;
-    color: white;
+    line-height: 100% !important;
+    font-size: 50px !important;
+    font-weight: 800 !important;
+    color: white !important;
 }
 .App {
     text-align: center;

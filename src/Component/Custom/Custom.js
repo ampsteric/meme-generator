@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import ParticlesBg from "particles-bg";
 import "./custom.css";
 export default function Custom(props) {
     const [param, setparam] = useState("");
     const [top, settop] = useState("Your Text");
     const [bottom, setbottom] = useState("Goes Here..");
+    // const [name, setname] = useState("React");
     useEffect(() => {
         async function check() {
             setparam(await props.match.params.id.substring(1));
@@ -58,9 +60,9 @@ export default function Custom(props) {
                 <img
                     id="123456"
                     src={`https://api.memegen.link/images/${param}/${top}/${bottom}.png?height=350&width=300`}
+                    alt="fetched"
                 >
-                    {/* name="myimg"
-                     {`https://api.memegen.link/images/${prop.name}/${prop.top}/${prop.down}.png?height=350&width=300`} */}
+                    {/* {`https://api.memegen.link/images/${prop.name}/${prop.top}/${prop.down}.png?height=350&width=300`}{" "} */}
                 </img>
             </div>
             <div className="edits-container">
@@ -69,15 +71,15 @@ export default function Custom(props) {
                     <input placeholder="text at Bottom" />
                     <input type="submit" />
                 </form>
-                {/* <a
+                <a
                     href={`https://api.memegen.link/images/${param}/${top}/${bottom}.png?height=350&width=300`}
-                    target="_blank"
+                    // target="_blank"
                     download
                     // ="myfile.jpg"
                     // onClick={(e) => downloadQR()}
                 >
                     <button>download</button>
-                </a> */}
+                </a>
                 <a
                     href={`https://api.memegen.link/images/${param}/${top}/${bottom}.png?height=350&width=300`}
                     download
@@ -87,6 +89,7 @@ export default function Custom(props) {
                     download
                 </a>
             </div>
+            <ParticlesBg type="circle" bg={true} />
         </div>
     );
 }

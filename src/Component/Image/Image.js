@@ -1,6 +1,5 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import Custom from "../Custom/Custom";
 export default function Image(prop) {
     return (
         <div className="img">

@@ -3,17 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
+    "particles-bg": "^2.5.0",
     "react": "^16.13.1",
+    "react-blob": "^2.1.0",
     "react-dom": "^16.13.1",
     "react-dropzone": "^11.1.0",
     "react-images-upload": "^1.2.8",
+    "react-responsive-carousel": "^3.2.9",
+    "react-rough-notation": "^0.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-sky": "^1.1.0",
+    "react-svg-use": "^2.1.0",
     "superagent": "^6.1.0"
   },
   "scripts": {
@@ -36,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^5.4.0"
   }
 }

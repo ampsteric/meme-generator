@@ -4,12 +4,8 @@ import Random from "./Component/RandomOnes/RandomOne";
 import Custom from "./Component/Custom/Custom";
 import Upload from "./Component/ImageUpload/ImageUpload";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Intro from "./Component/Intro/Intro";
-// import React, { Component } from "react";
 import Sky from "react-sky";
-// import "./intro.css";
-
-// you can pass imported images to Sky
+import Home from "./Component/Home/Home";
 import myImage14 from "./utils/memes/1.jpg";
 import myImage from "./utils/memes/2.jpg";
 import myImage1 from "./utils/memes/3.jpg";
@@ -180,11 +176,14 @@ function App() {
     });
     return (
         <div className="App">
-            {/* <Router>
-                <Route path="/" exact>
+            <Router>
+                <Route path="/mywords" exact>
                     {res}
                 </Route>
-                <Route path="/random" exact>
+                <Route path="/home" exact>
+                    <Home />
+                </Route>
+                <Route path="/latest" exact>
                     <Random />{" "}
                 </Route>
                 <Route path="/customBackground" exact>
@@ -192,46 +191,49 @@ function App() {
                 </Route>
 
                 <Route exact path="/customize/:id" component={Custom} />
-            </Router> */}
-            {/* <p>To one and All..</p> */}
-            <Sky
-                images={{
-                    /* FORMAT AS FOLLOWS */
-                    0: myImage1 /* You can pass as many images as you want */,
-                    1: myImage /* you can pass images in any form: link, imported via webpack... */,
-                    2: myImage2,
-                    3: myImage4,
-                    4: myImage5,
-                    5: myImage6,
-                    6: myImage7,
-                    7: myImage8,
-                    8: myImage9,
-                    9: myImage10,
-                    10: myImage11,
-                    11: myImage12,
-                    12: myImage13,
-                    13: myImage14,
-                    14: myImage3,
-                }}
-                how={
-                    130
-                } /* Pass the number of images Sky will render chosing randomly */
-                time={40} /* time of animation */
-                size={"100px"} /* size of the rendered images */
-                background={"#C3AED6"} /* color of background */
-            />
-            <div className="modal1">
-                <div>
-                    <p>Welcome to MEMErchandise.</p>
-                    <a class="waves-effect waves-light btn-large">
-                        <i class="material-icons right">arrow_forward</i>Get
-                        Started
-                    </a>
-                </div>
-                <div>
-                    <img src={cover} />
-                </div>
-            </div>
+                <Route path="/" exact>
+                    <Sky
+                        images={{
+                            0: myImage1,
+                            1: myImage,
+                            2: myImage2,
+                            3: myImage4,
+                            4: myImage5,
+                            5: myImage6,
+                            6: myImage7,
+                            7: myImage8,
+                            8: myImage9,
+                            9: myImage10,
+                            10: myImage11,
+                            11: myImage12,
+                            12: myImage13,
+                            13: myImage14,
+                            14: myImage3,
+                        }}
+                        how={130}
+                        time={40}
+                        size={"100px"}
+                        background={"#C3AED6"}
+                    />
+                    <div className="modal1">
+                        <div>
+                            <p>Welcome to MEMErchandise.</p>
+                            <a
+                                class="waves-effect waves-light btn-large"
+                                href="/home"
+                            >
+                                <i class="material-icons right">
+                                    arrow_forward
+                                </i>
+                                Get Started
+                            </a>
+                        </div>
+                        <div>
+                            <img src={cover} alt="cover" />
+                        </div>
+                    </div>
+                </Route>
+            </Router>{" "}
         </div>
     );
 }
