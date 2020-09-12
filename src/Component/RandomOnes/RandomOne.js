@@ -36,6 +36,8 @@
 
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
+// import StackGrid from "react-stack-grid";
+import { Rea as Scroll } from "../";
 import "./random.css";
 
 // const imgflip_link = "https://api.imgflip.com/get_memes";
@@ -61,11 +63,24 @@ export default function RandomOne(prop) {
     }, []);
     result = memes.map((item) => {
         return (
-            <div>
+            <div key={item.url}>
+                {/* <StackGrid columnWidth={150}></StackGrid> */}
                 <img src={item.url} alt="meme" />
+                {/* <StackGrid /> */}
             </div>
         );
         // console.log(item.url);
     });
-    return <div className="random">{result}</div>;
+    return (
+        <div className="random">
+            <div className="head">
+                <h1>
+                    Just Tap on the meme that suits you to download it in your
+                    device!
+                </h1>
+            </div>
+
+            {result}
+        </div>
+    );
 }

@@ -1,14 +1,52 @@
+.wrapper {
+    overflow: hidden;
+    background: linear-gradient(180deg, #f08, #d0e);
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+}
+
 .main {
     display: flex;
     flex-direction: column !important;
-    margin: 10% 20% !important;
+    margin: 10% 25% !important;
+    background-color: white !important;
+    position: absolute;
+    z-index: 100;
+    top: 35vh;
 }
 .left {
     display: flex;
+    width: 80% !important;
 }
 .upload {
-    border: 1px solid rgb(165, 160, 160) !important;
+    /* border: 1px solid rgb(165, 160, 160) !important; */
     border-radius: 8px !important;
     padding: 5% 20% !important;
     margin: 10% 15% !important;
+    color: rgb(97, 95, 95);
+    height: 10vh;
+}
+.upload {
+    /* border: 1px solid rgb(165, 160, 160) !important; */
+    border-radius: 8px !important;
+    padding: 5% 5% !important;
+    margin: 5% 5% !important;
+    color: rgb(97, 95, 95);
+    height: 35vh;
+}
+.edits-container {
+    padding-left: 30% !important;
+    margin-top: 10%;
+}
+
+.getprops p {
+    margin: 25% 20% !important;
+    font-family: "Work Sans", sans-serif;
+    line-height: 100% !important;
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    padding: 2% 5% !important;
+    color: rgb(136, 125, 125) !important;
+    border: 1px rgb(116, 113, 113) solid;
 }

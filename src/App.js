@@ -21,7 +21,12 @@ import myImage10 from "./utils/memes/12.jpg";
 import myImage11 from "./utils/memes/13.jpg";
 import myImage12 from "./utils/memes/14.jpg";
 import myImage13 from "./utils/memes/15.jpg";
+import GetAppIcon from "@material-ui/icons/GetApp";
+import GetAppIcon1 from "@material-ui/icons/Edit";
+import GetAppIcon2 from "@material-ui/icons/Search";
 import cover from "./utils/rocket.png";
+
+import Framer from "./Component/Framer";
 import "./App.css";
 const names = [
     "buzz",
@@ -167,6 +172,7 @@ function App() {
     const res = names.map((item) => {
         return (
             <Image
+                key={item.name}
                 name={item}
                 top={"Your Text"}
                 down={"Goes Here.."}
@@ -178,13 +184,59 @@ function App() {
         <div className="App">
             <Router>
                 <Route path="/mywords" exact>
+                    <div className="instructions">
+                        <div class="row">
+                            <div class="col s12 m5">
+                                <div class="card-panel teal">
+                                    <div>
+                                        {" "}
+                                        <GetAppIcon2 />
+                                    </div>
+
+                                    <p class="white-text">
+                                        Go through and and pick a meme that
+                                        works well for you!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m5">
+                                <div class="card-panel teal">
+                                    <div>
+                                        {" "}
+                                        <GetAppIcon1 />
+                                    </div>
+
+                                    <p class="white-text">
+                                        Click on the meme to give it a personal
+                                        touch.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m5">
+                                <div class="card-panel teal">
+                                    <div className="icon">
+                                        {" "}
+                                        <GetAppIcon />
+                                    </div>
+
+                                    <p class="white-text">
+                                        Download the meme to share it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     {res}
                 </Route>
                 <Route path="/home" exact>
                     <Home />
                 </Route>
                 <Route path="/latest" exact>
-                    <Random />{" "}
+                    <Random />
                 </Route>
                 <Route path="/customBackground" exact>
                     <Upload />

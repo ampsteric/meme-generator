@@ -1,3 +1,7 @@
+body {
+    background: black;
+    overflow-x: hidden;
+}
 * {
     color: #1e8bc3;
 }
@@ -39,11 +43,14 @@ p {
     font-family: "Work Sans", sans-serif;
     font-size: 100px !important ;
     color: white !important;
+    margin: 30% 5% !important;
+    padding-right: 5% !important;
 }
 .speak p {
     font-family: "Work Sans", sans-serif;
     font-size: 100px !important ;
     color: white !important;
+    margin: 25% 3% 2% 0% !important;
 }
 /* .mockup p {
     font-family: "Work Sans", sans-serif;
@@ -52,10 +59,12 @@ p {
     margin: 30% 5% !important;
 } */
 .mockup p {
+    box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
     font-size: 70px !important;
     color: white !important;
     margin: 30% 5% !important;
+    padding-right: 5% !important;
 }
 .make p {
     font-family: "Work Sans", sans-serif;
@@ -83,7 +92,7 @@ p {
     color: #fdd365 !important;
 }
 #links {
-    margin-top: 30% !important;
+    margin-top: 20% !important;
 }
 footer li {
     margin-top: 10%;
@@ -154,7 +163,7 @@ footer {
 
 .left {
     width: 30%;
-    margin: 1% 10%;
+    margin: 1% 5%;
 }
 .left1 {
     box-sizing: border-box;

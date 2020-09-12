@@ -1,13 +1,15 @@
-/* body {
-    overflow: hidden;
-} */
 .custom {
     display: flex;
     margin: 15% 10%;
     background-color: white;
     padding: 5% 15%;
     border-radius: 8px;
+    height: 50vh;
+    width: 150vh;
 }
 .edits-container {
     padding-left: 30% !important;
+}
+.major {
+    overflow: hidden !important;
 }

@@ -14,3 +14,38 @@ img {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+.instructions {
+    display: flex;
+    /* height: 50vh; */
+    margin: 0% 5% 0% 3%;
+    width: 100%;
+}
+.card-panel {
+    height: 30vh !important;
+    width: 50vh;
+}
+svg:not(:root) {
+    overflow: hidden;
+    font-size: 50px;
+}
+.white-text {
+    color: #fff !important;
+    margin-top: 5% !important;
+}
+h1 {
+    margin: 5% 20% 5% 5%;
+    font-size: 130px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 100%;
+    background: -webkit-linear-gradient(
+        /* to right top, */ #051937,
+        #004d7a,
+        #008793,
+        #00bf72,
+        #a8eb12
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

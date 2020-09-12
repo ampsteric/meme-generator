@@ -1,8 +1,9 @@
 import React from "react";
 import Dropzone from "react-dropzone";
 import request from "superagent";
-
 import "./imageupload.css";
+import Framer from "../Framer";
+
 const CLOUDINARY_UPLOAD_PRESET = "mvoiiayh";
 const CLOUDINARY_UPLOAD_URL =
     " https://api.cloudinary.com/v1_1/dcykxiua2/image/upload";
@@ -54,47 +55,56 @@ export default class ImageUpload extends React.Component {
 
     render() {
         return (
-            <div className="main">
-                <div className="left">
-                    <div>
-                        {this.state.uploadedFileCloudinaryUrl === "" ? null : (
-                            <div>
-                                <img
-                                    src={`https://api.memegen.link/images/custom/${this.state.toptext}/${this.state.bottomtext}.png?background=${this.state.uploadedFileCloudinaryUrl}`}
-                                    alt="fetched"
-                                />
-                            </div>
-                        )}
-                    </div>
-                    <div className="edits-container">
-                        <form onSubmit={(e) => this.submitHandler(e)}>
-                            <input placeholder="text at Top" />
-                            <input placeholder="text at Bottom" />
-                            <input type="submit" />
-                        </form>
-                    </div>
+            <div className="wrapper">
+                <div className="blob">
+                    <Framer />
                 </div>
-                <div className="upload">
-                    {" "}
-                    <Dropzone
-                        onDrop={this.onImageDrop.bind(this)}
-                        accept="image/*"
-                        multiple={false}
-                    >
-                        {({ getRootProps, getInputProps }) => {
-                            return (
-                                <div {...getRootProps()}>
-                                    <input {...getInputProps()} />
-                                    {
-                                        <p>
-                                            Try dropping some files here, or
-                                            click to select files to upload.
-                                        </p>
-                                    }
+                <div className="main">
+                    <div className="left">
+                        <div>
+                            {this.state.uploadedFileCloudinaryUrl ===
+                            "" ? null : (
+                                <div>
+                                    <img
+                                        src={`https://api.memegen.link/images/custom/${this.state.toptext}/${this.state.bottomtext}.png?background=${this.state.uploadedFileCloudinaryUrl}`}
+                                        alt="fetched"
+                                    />
                                 </div>
-                            );
-                        }}
-                    </Dropzone>
+                            )}
+                        </div>
+                        <div className="edits-container">
+                            <form onSubmit={(e) => this.submitHandler(e)}>
+                                <input placeholder="text at Top" />
+                                <input placeholder="text at Bottom" />
+                                <input type="submit" />
+                            </form>
+                        </div>
+                    </div>
+                    <div className="upload">
+                        {" "}
+                        <Dropzone
+                            onDrop={this.onImageDrop.bind(this)}
+                            accept="image/*"
+                            multiple={false}
+                        >
+                            {({ getRootProps, getInputProps }) => {
+                                return (
+                                    <div
+                                        className="getprops"
+                                        {...getRootProps()}
+                                    >
+                                        <input {...getInputProps()} />
+                                        {
+                                            <p>
+                                                Try dropping some files here, or
+                                                click to select files to upload.
+                                            </p>
+                                        }
+                                    </div>
+                                );
+                            }}
+                        </Dropzone>
+                    </div>
                 </div>
             </div>
         );

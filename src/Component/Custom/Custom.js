@@ -55,41 +55,43 @@ export default function Custom(props) {
         element.click();
     };
     return (
-        <div className="custom">
-            <div>
-                <img
-                    id="123456"
-                    src={`https://api.memegen.link/images/${param}/${top}/${bottom}.png?height=350&width=300`}
-                    alt="fetched"
-                >
-                    {/* {`https://api.memegen.link/images/${prop.name}/${prop.top}/${prop.down}.png?height=350&width=300`}{" "} */}
-                </img>
+        <div className="major">
+            <div className="custom">
+                <div>
+                    <img
+                        id="123456"
+                        src={`https://api.memegen.link/images/${param}/${top}/${bottom}.png?height=350&width=300`}
+                        alt="fetched"
+                    >
+                        {/* {`https://api.memegen.link/images/${prop.name}/${prop.top}/${prop.down}.png?height=350&width=300`}{" "} */}
+                    </img>
+                </div>
+                <div className="edits-container">
+                    <form onSubmit={submitHandler}>
+                        <input placeholder="text at Top" />
+                        <input placeholder="text at Bottom" />
+                        <input type="submit" />
+                    </form>
+                    <a
+                        href={`https://api.memegen.link/images/${param}/${top}/${bottom}.png?height=350&width=300`}
+                        // target="_blank"
+                        download
+                        // ="myfile.jpg"
+                        // onClick={(e) => downloadQR()}
+                    >
+                        <button>download</button>
+                    </a>
+                    <a
+                        href={`https://api.memegen.link/images/${param}/${top}/${bottom}.png?height=350&width=300`}
+                        download
+                        onClick={() => download()}
+                    >
+                        <i className="fa fa-download" />
+                        download
+                    </a>
+                </div>
+                <ParticlesBg type="circle" bg={true} />
             </div>
-            <div className="edits-container">
-                <form onSubmit={submitHandler}>
-                    <input placeholder="text at Top" />
-                    <input placeholder="text at Bottom" />
-                    <input type="submit" />
-                </form>
-                <a
-                    href={`https://api.memegen.link/images/${param}/${top}/${bottom}.png?height=350&width=300`}
-                    // target="_blank"
-                    download
-                    // ="myfile.jpg"
-                    // onClick={(e) => downloadQR()}
-                >
-                    <button>download</button>
-                </a>
-                <a
-                    href={`https://api.memegen.link/images/${param}/${top}/${bottom}.png?height=350&width=300`}
-                    download
-                    onClick={() => download()}
-                >
-                    <i className="fa fa-download" />
-                    download
-                </a>
-            </div>
-            <ParticlesBg type="circle" bg={true} />
         </div>
     );
 }
