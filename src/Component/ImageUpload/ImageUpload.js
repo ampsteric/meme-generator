@@ -76,7 +76,7 @@ export default class ImageUpload extends React.Component {
                             <form onSubmit={(e) => this.submitHandler(e)}>
                                 <input placeholder="text at Top" />
                                 <input placeholder="text at Bottom" />
-                                <input type="submit" />
+                                <input type="submit" id="buton" />
                             </form>
                         </div>
                     </div>

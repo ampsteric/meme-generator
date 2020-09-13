@@ -27,6 +27,7 @@ import GetAppIcon2 from "@material-ui/icons/Search";
 import cover from "./utils/rocket.png";
 
 import Framer from "./Component/Framer";
+import Filesaver from "./Component/Filesaver/filesaver";
 import "./App.css";
 const names = [
     "buzz",
@@ -233,6 +234,7 @@ function App() {
                     {res}
                 </Route>
                 <Route path="/home" exact>
+                    {/* <Filesaver /> */}
                     <Home />
                 </Route>
                 <Route path="/latest" exact>

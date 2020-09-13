@@ -5,7 +5,16 @@
     width: 100%;
     /* position: relative; */
 }
-
+#buton {
+    background-color: #ff0066;
+    padding: 2.5% 5%;
+    border: 0;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+}
 .main {
     display: flex;
     flex-direction: column !important;

@@ -37,7 +37,7 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 // import StackGrid from "react-stack-grid";
-import { Rea as Scroll } from "../";
+// import { Rea as Scroll } from "../";
 import "./random.css";
 
 // const imgflip_link = "https://api.imgflip.com/get_memes";

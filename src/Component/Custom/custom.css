@@ -1,5 +1,6 @@
 .custom {
     display: flex;
+    flex-direction: column;
     margin: 15% 10%;
     background-color: white;
     padding: 5% 15%;
@@ -7,9 +8,33 @@
     height: 50vh;
     width: 150vh;
 }
+.custom-flex {
+    display: flex;
+    margin-bottom: 5%;
+}
 .edits-container {
     padding-left: 30% !important;
 }
 .major {
     overflow: hidden !important;
+}
+.custom i {
+    color: white;
+}
+.custom a {
+    color: white !important;
+    text-decoration: none;
+}
+.custom .btn {
+    background-color: #a34fa1;
+}
+#submit {
+    background-color: #a34fa1;
+    padding: 2.5% 5%;
+    border: 0;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    cursor: pointer;
 }

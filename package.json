@@ -3,13 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@axetroy/react-download": "^1.1.1",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dom-to-image": "^2.6.0",
+    "downloadjs": "^1.4.7",
+    "express": "^4.17.1",
+    "file-saver": "^2.0.2",
     "framer-motion": "^2.6.10",
+    "js-file-download": "^0.4.12",
     "particles-bg": "^2.5.0",
     "react": "^16.13.1",
     "react-blob": "^2.1.0",
@@ -48,6 +56,7 @@
     ]
   },
   "devDependencies": {
-    "@svgr/webpack": "^5.4.0"
+    "@svgr/webpack": "^5.4.0",
+    "react-dfb": "^1.0.4"
   }
 }
