@@ -19,7 +19,6 @@ async function download(url) {
         responseType: "stream",
     });
 
-    // res.data.pipe(fs.createWriteStream(path));
     res.data.pipe(writer);
 
     return new Promise((resolve, reject) => {

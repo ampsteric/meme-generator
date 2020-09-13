@@ -45,6 +45,7 @@ import "./random.css";
 
 export default function RandomOne(prop) {
     const [memes, setmemes] = useState([]);
+    const [imageURL, setimageURL] = useState("");
     let result;
     useEffect(() => {
         async function fetchData() {
@@ -61,15 +62,39 @@ export default function RandomOne(prop) {
         }
         fetchData();
     }, []);
+
+    const data = JSON.stringify({ destination: imageURL });
+    const options = {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        data,
+        url: "http://localhost:8080/api",
+    };
+    const save = async (e) => {
+        e.preventDefault();
+        await Axios(options)
+            .then((res) => {
+                console.log(res);
+            })
+            .catch((err) => {
+                console.log("error is:" + err);
+            });
+    };
+    const caller = (e, url) => {
+        setimageURL(url);
+        save(e);
+    };
+
     result = memes.map((item) => {
         return (
             <div key={item.url}>
-                {/* <StackGrid columnWidth={150}></StackGrid> */}
-                <img src={item.url} alt="meme" />
-                {/* <StackGrid /> */}
+                <img
+                    src={item.url}
+                    alt="meme"
+                    onClick={(e) => caller(e, item.url)}
+                />
             </div>
         );
-        // console.log(item.url);
     });
     return (
         <div className="random">
