@@ -41,4 +41,6 @@ app.post("/api", (req, res) => {
     res.send("downloading");
 });
 
-app.listen(8080);
+app.listen(8080, () => {
+    console.log("Server started and listening at port 8080...");
+});
