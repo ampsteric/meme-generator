@@ -13,10 +13,15 @@ for all the Creative memers has arrived!
 ## Steps to miracle..
 
 `Install the repository in your PC`
+
 `Install all the required dependencies`
+
 `Open terminal and cd into the repo directory`
+
 `Type npm start to start Client at port 3000`
+
 `cd into server directory`
+
 `Type node index.js to start server at port 8080`
 
 ### What we do?
