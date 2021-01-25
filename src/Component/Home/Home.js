@@ -13,9 +13,6 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TelegramIcon from "@material-ui/icons/Telegram";
 
-// import { ReactComponent as Reactsvg } from "../../utils/img.svg";
-// import { ReactComponent as ReactLogo } from "../../utils/car.svg";
-
 export default function Home() {
     return (
         <div className="home">

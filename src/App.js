@@ -161,12 +161,6 @@ const names = [
     "whatyear",
     "elf",
 ];
-// const custom_link =
-//     "https://api.memegen.link/images/custom/_/my_background.png?background=http://www.gstatic.com/webp/gallery/1.png";
-
-// const link =
-//     "https://memegen.link/crazypills/your_text/goes_here.jpg?preview=true&watermark=none&share=true";
-//     const down_link = 'https://memegen.link/stew/_/baby,_you've_got_a_stew_going!.jpg?preview=true&watermark=none&share=true';
 
 function App() {
     const [name, setname] = useState();

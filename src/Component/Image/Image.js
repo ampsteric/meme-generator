@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 export default function Image(prop) {
     return (
         <div className="img" key={prop.name}>
